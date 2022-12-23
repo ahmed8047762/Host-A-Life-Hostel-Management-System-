@@ -1,0 +1,27 @@
+
+.background
+{
+    -fx-background-color: #0E0F19;
+}
+.Button
+{
+    -fx-font-size: 18;
+    -fx-background-radius:25;
+}
+.return_button
+{
+    -fx-font-size: 12;
+    -fx-background-radius: 18
+}
+.primary_button
+{
+    -fx-background-color: #98C1D9;
+}
+.font
+{
+  -fx-font-family: "Sans-serif";
+}
+.table_color
+{
+    -fx-background-color : #546A7B
+}

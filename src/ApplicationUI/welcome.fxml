@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ApplicationUI.welcome_controller">
+   <center>
+        <AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@style.css" BorderPane.alignment="CENTER">
+            <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.062745101749897" green="0.14509804546833038" blue="0.25882354378700256" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.054901961237192154" green="0.05882352963089943" blue="0.09803921729326248" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Button fx:id="button" layoutX="14.0" layoutY="177.0" mnemonicParsing="false" onAction="#Register_Student_Screen" prefHeight="12.0" prefWidth="164.0" stylesheets="@style.css" text="Register Student" textFill="#260e0e">
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+               <styleClass>
+                  <String fx:value="Button" />
+                  <String fx:value="primary_button" />
+               </styleClass></Button>
+            <ImageView fitHeight="135.0" fitWidth="139.0" layoutX="232.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/image.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="228.0" fitWidth="213.0" layoutX="222.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/taxi-welcome-door.gif" />
+               </image>
+            </ImageView>
+            <Button layoutX="425.0" layoutY="177.0" mnemonicParsing="false" onAction="#Allocate_Room_Screen" prefHeight="12.0" prefWidth="164.0" stylesheets="@style.css" text="Allocate Room">
+               <styleClass>
+                  <String fx:value="Button" />
+                  <String fx:value="primary_button" />
+               </styleClass></Button>
+            <Button layoutX="14.0" layoutY="279.0" mnemonicParsing="false" onAction="#Room_Availability_Screen" prefHeight="12.0" prefWidth="164.0" stylesheets="@style.css" text="Room Availability">
+               <styleClass>
+                  <String fx:value="Button" />
+                  <String fx:value="primary_button" />
+               </styleClass></Button>
+            <Button layoutX="425.0" layoutY="279.0" mnemonicParsing="false" onAction="#Manage_Mess_Screen" prefHeight="12.0" prefWidth="164.0" stylesheets="@style.css" text="Manage Mess">
+               <styleClass>
+                  <String fx:value="Button" />
+                  <String fx:value="primary_button" />
+               </styleClass></Button>
+            <Button layoutX="14.0" layoutY="366.0" mnemonicParsing="false" onAction="#return_back" prefHeight="26.0" prefWidth="82.0" stylesheets="@style.css" text="go back">
+               <styleClass>
+                  <String fx:value="return_button" />
+                  <String fx:value="primary_button" />
+               </styleClass></Button>
+            </children>
+        </AnchorPane>
+   </center>
+</BorderPane>

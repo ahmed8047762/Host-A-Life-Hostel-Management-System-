@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ApplicationUI.calcandpayfeecontroller">
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@style.css">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.062745101749897" green="0.14509804546833038" blue="0.25882354378700256" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.054901961237192154" green="0.05882352963089943" blue="0.09803921729326248" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Button fx:id="button1" layoutX="228.0" layoutY="180.0" mnemonicParsing="false" onAction="#calcfees" prefHeight="27.0" prefWidth="142.0" stylesheets="@style.css" text="Calculate Fees">
+               <styleClass>
+                  <String fx:value="Button" />
+                  <String fx:value="primary_button" />
+               </styleClass>
+            </Button>
+            <Label fx:id="label1" layoutX="243.0" layoutY="230.0" prefHeight="20.0" prefWidth="91.0" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font></Label>
+            <Button fx:id="button2" layoutX="225.0" layoutY="250.0" mnemonicParsing="false" onAction="#payfees" prefHeight="20.0" prefWidth="148.0" stylesheets="@style.css" text="Pay Fees">
+               <styleClass>
+                  <String fx:value="Button" />
+                  <String fx:value="primary_button" />
+               </styleClass>
+            </Button>
+            <Button fx:id="signout" layoutX="14.0" layoutY="360.0" mnemonicParsing="false" onAction="#return_button" prefHeight="25.0" prefWidth="63.0" stylesheets="@style.css" text="go back">
+               <styleClass>
+                  <String fx:value="return_button" />
+                  <String fx:value="primary_button" />
+               </styleClass>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="225.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/image.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="147.0" fitWidth="142.0" layoutX="425.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/bubble-gum-bundles-of-money.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="120.0" fitWidth="122.0" layoutX="46.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/abstract-734.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
